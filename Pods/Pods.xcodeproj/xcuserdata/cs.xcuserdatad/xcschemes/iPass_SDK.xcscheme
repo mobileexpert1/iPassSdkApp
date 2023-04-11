@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E3B47F8D535F096596FD5AB28C1E8F96"
-               BuildableName = "iPassSDK1.framework"
-               BlueprintName = "iPassSDK1"
+               BlueprintIdentifier = "2FE23FFD9052A01ABE84352E0181ACD1"
+               BuildableName = "iPass_SDK.framework"
+               BlueprintName = "iPass_SDK"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

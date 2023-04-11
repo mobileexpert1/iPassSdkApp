@@ -1,4 +1,4 @@
-# iPassSDK1
+# iPass_SDK
 How to install cocoapods in project? Steps to be followed:
 
 In the terminal, cd to your Xcode project root directory (where your .xcodeproj file resides) and type: pod init

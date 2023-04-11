@@ -1,16 +1,16 @@
 {
-  "name": "iPassSDK1",
-  "module_name": "iPassSDK1",
-  "version": "0.0.2",
+  "name": "iPass_SDK",
+  "module_name": "iPass_SDK",
+  "version": "0.0.1",
   "license": "LICENSE",
   "summary": "Elegant HTTP Networking in Swift",
-  "homepage": "https://github.com/BaljitKaur1/iPassSDK1.git",
+  "homepage": "https://github.com/mobileexpert1/iPass_SDK.git",
   "authors": {
-    "BaljitKaur1": "baljitkaur@csgroupchd.com"
+    "mobileexpert1": "appsdev096@gmail.com"
   },
   "source": {
-    "git": "https://github.com/BaljitKaur1/iPassSDK1.git",
-    "tag": "0.0.2"
+    "git": "https://github.com/mobileexpert1/iPass_SDK.git",
+    "tag": "0.0.1"
   },
   "platforms": {
     "ios": "13.0"

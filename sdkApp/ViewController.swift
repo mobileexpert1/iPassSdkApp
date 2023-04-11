@@ -3,7 +3,7 @@
 //  Created by CS on 22/03/23.
 
 import UIKit
-import iPassSDK1
+import iPass_SDK
 
 class ViewController: UIViewController {
     

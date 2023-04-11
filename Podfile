@@ -6,7 +6,7 @@ target 'sdkApp' do
   use_frameworks!
 
   # Pods for sdkApp
-    pod 'iPassSDK1', :git => 'https://github.com/BaljitKaur1/iPassSDK1.git'
+    pod 'iPass_SDK', :git => 'https://github.com/mobileexpert1/iPass_SDK.git'
 
   target 'sdkAppTests' do
     inherit! :search_paths

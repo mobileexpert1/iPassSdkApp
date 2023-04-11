@@ -1,6 +1,0 @@
-framework module iPassSDK1 {
-  umbrella header "iPassSDK1-umbrella.h"
-
-  export *
-  module * { export * }
-}

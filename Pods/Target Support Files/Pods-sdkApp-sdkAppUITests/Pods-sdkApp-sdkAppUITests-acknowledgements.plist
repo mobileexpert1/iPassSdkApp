@@ -721,7 +721,7 @@ Public License instead of this License.  But first, please read
 			<key>License</key>
 			<string>LICENSE</string>
 			<key>Title</key>
-			<string>iPassSDK1</string>
+			<string>iPass_SDK</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

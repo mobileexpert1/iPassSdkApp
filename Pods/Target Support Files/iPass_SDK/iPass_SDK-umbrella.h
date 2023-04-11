@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double iPassSDK1VersionNumber;
-FOUNDATION_EXPORT const unsigned char iPassSDK1VersionString[];
+FOUNDATION_EXPORT double iPass_SDKVersionNumber;
+FOUNDATION_EXPORT const unsigned char iPass_SDKVersionString[];
 

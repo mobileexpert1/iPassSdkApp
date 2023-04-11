@@ -1,28 +1,28 @@
 PODS:
   - Alamofire (5.6.4)
-  - iPassSDK1 (0.0.2):
+  - iPass_SDK (0.0.1):
     - Alamofire
 
 DEPENDENCIES:
-  - iPassSDK1 (from `https://github.com/BaljitKaur1/iPassSDK1.git`)
+  - iPass_SDK (from `https://github.com/mobileexpert1/iPass_SDK.git`)
 
 SPEC REPOS:
   trunk:
     - Alamofire
 
 EXTERNAL SOURCES:
-  iPassSDK1:
-    :git: https://github.com/BaljitKaur1/iPassSDK1.git
+  iPass_SDK:
+    :git: https://github.com/mobileexpert1/iPass_SDK.git
 
 CHECKOUT OPTIONS:
-  iPassSDK1:
-    :commit: 208c035ed709c86c83d864cf9af36df3b1439170
-    :git: https://github.com/BaljitKaur1/iPassSDK1.git
+  iPass_SDK:
+    :commit: bfcd6735b2e0efcd774209ecad3c0e3f4ceda03e
+    :git: https://github.com/mobileexpert1/iPass_SDK.git
 
 SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
-  iPassSDK1: 5b2986e967c67ce8e90dcb5078b5532c2ae67ebb
+  iPass_SDK: c37826b585019f5c4d579146fc54a0692af5c41d
 
-PODFILE CHECKSUM: 20cedaf9d612893ce151389d168420c3f33b0033
+PODFILE CHECKSUM: a5a8332db69b01f43c97ab9adde7e97a1d8636e2
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.12.0

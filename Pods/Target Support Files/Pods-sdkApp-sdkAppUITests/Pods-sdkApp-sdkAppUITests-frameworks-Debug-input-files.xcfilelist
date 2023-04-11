@@ -1,3 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-sdkApp-sdkAppUITests/Pods-sdkApp-sdkAppUITests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
-${BUILT_PRODUCTS_DIR}/iPassSDK1/iPassSDK1.framework
+${BUILT_PRODUCTS_DIR}/iPass_SDK/iPass_SDK.framework
