@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.6.4)
+  - iPassSDK1 (0.0.2):
+    - Alamofire
+
+DEPENDENCIES:
+  - iPassSDK1 (from `https://github.com/BaljitKaur1/iPassSDK1.git`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+
+EXTERNAL SOURCES:
+  iPassSDK1:
+    :git: https://github.com/BaljitKaur1/iPassSDK1.git
+
+CHECKOUT OPTIONS:
+  iPassSDK1:
+    :commit: 208c035ed709c86c83d864cf9af36df3b1439170
+    :git: https://github.com/BaljitKaur1/iPassSDK1.git
+
+SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  iPassSDK1: 5b2986e967c67ce8e90dcb5078b5532c2ae67ebb
+
+PODFILE CHECKSUM: 20cedaf9d612893ce151389d168420c3f33b0033
+
+COCOAPODS: 1.11.2
