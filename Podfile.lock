@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   iPass_SDK:
-    :commit: bfcd6735b2e0efcd774209ecad3c0e3f4ceda03e
+    :commit: 684b171cde0fda05fccfc74e2b6d6c7926a43ada
     :git: https://github.com/mobileexpert1/iPass_SDK.git
 
 SPEC CHECKSUMS:
