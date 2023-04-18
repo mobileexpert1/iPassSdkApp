@@ -343,7 +343,6 @@ open class Apis: NSObject {
             } else if (result?.message == "Success"){
                 completion(result,nil)
             }
-            
         }
     }
     
@@ -433,7 +432,7 @@ open class Apis: NSObject {
             self.baseUrl = BaseUrl.baseUrl.rawValue + VersionEndpoint.userEndpoint.rawValue + Endpoints.idCardGetFRNTData.rawValue +  token + "&apimId=\(apimId)"
         case "BackIDCard": //Get Id Card Back Image
             self.baseUrl = BaseUrl.baseUrl.rawValue + VersionEndpoint.userEndpoint.rawValue + Endpoints.idCardGetBackData.rawValue +  token + "&apimId=\(apimId)"
-        case "Document":
+        case "Document":  // Get Document Data
             self.baseUrl = BaseUrl.baseUrl.rawValue + VersionEndpoint.userEndpoint.rawValue + Endpoints.documentGetData.rawValue +  token + "&apimId=\(apimId)"
         default:
             self.baseUrl = BaseUrl.baseUrl.rawValue + VersionEndpoint.userEndpoint.rawValue + Endpoints.documentGetData.rawValue +  token + "&apimId=\(apimId)"
@@ -446,6 +445,53 @@ open class Apis: NSObject {
         }
     }
     
-   
+   // MARK: - Get Validate Document Data
+    open func getValidateDocumentData(token:String,imgData:String, completion : @escaping(_:GetValidateDocumentModel?,_ :ErrorBase?  ) -> Void){
+        let baseUrl = BaseUrl.baseUrl.rawValue + VersionEndpoint.userEndpoint.rawValue + Endpoints.validateDocument.rawValue +  token
+        let params : [String: String] = [
+            "image" : imgData
+        ]
+        
+        ApiStore.shared.baseRequestApi(baseUrl, .post,params,nil) { (result : GetValidateDocumentModel?) in
+            if result?.message == "Fail"{
+                print("Error----",result?.error as Any)
+                completion(nil,result?.error)
+            } else if (result?.message == "Success"){
+                completion(result,nil)
+            }
+        }
+    }
+    
+    // MARK: - Get Screening Document Data
+    open func getScreeningDocumentData(token:String,imgData:String, completion : @escaping(_:GetScreeningDocumentDataModel?,_ :ErrorBase?  ) -> Void){
+        let baseUrl = BaseUrl.baseUrl.rawValue + VersionEndpoint.userEndpoint.rawValue + Endpoints.screeningDocument.rawValue + token
+        let params : [String: String] = [
+            "image" : imgData
+        ]
+        ApiStore.shared.baseRequestApi(baseUrl, .post,params) { (result : GetScreeningDocumentDataModel?) in
+            if result?.message == "Fail"{
+                print("Error----",result?.error as Any)
+                completion(nil,result?.error)
+            } else if (result?.message == "Success"){
+                completion(result,nil)
+            }
+        }
+    }
+    
+    // MARK: - Get The Handwritten api Document Data
+    open func getHandwrittenDocumentData(token:String,imgData:String, completion : @escaping(_:HandwrittenDocumentModel?,_ :ErrorBase?  ) -> Void){
+        let baseUrl = BaseUrl.baseUrl.rawValue + VersionEndpoint.userEndpoint.rawValue + Endpoints.handwrittenDocument.rawValue + token
+        let params : [String: String] = [
+            "image" : imgData,
+        ]
+        ApiStore.shared.baseRequestApi(baseUrl, .post,params) { (result : HandwrittenDocumentModel?) in
+            if result?.message == "Fail"{
+                print("Error----",result?.error as Any)
+                completion(nil,result?.error)
+            } else if (result?.message == "Success"){
+                completion(result,nil)
+            }
+        }
+    }
 }
 

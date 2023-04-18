@@ -24,3 +24,5 @@ public struct JWTBdy: Codable {
     public let type, title, status, detail: String?
     public let instance: String?
 }
+
+

@@ -290,6 +290,24 @@ class ViewController: UIViewController {
         Apis().getDataOfType(token: "rteyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjNiN2MzMWQ2MDRmODhkZTVmNGZmM2QxIiwiZW1haWwiOiJxd2VydHkzQGdtYWlsLmNvbSIsImlhdCI6MTY3Mjk4NzQyMSwiZXhwIjoxNjcyOTg3NDUxfQ.hsMcehuY4T-d3_-HV09u5r4JwBaLrD-1cioI-xq37Bc", jwtToken: "11eyJhbGciOiJIUzI1NiJ9.bXJ2ZXJtYTkxMzc4QGdtYWlsLmNvbWFqYXkga3VtYXI.H9agOLfRpnWywRo3alp75OeblSADsKsGDxVVUtheMyk", apimId: "586cf7c7-6b85-4597-ad30-4b39df96e993", documentType: "BackIDCard") { returnResponse in
             print("returnResponse--------",returnResponse)
         }
+        
+        // Get Validate Document Data
+        Apis().getValidateDocumentData(token: "rteyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjNiN2MzMWQ2MDRmODhkZTVmNGZmM2QxIiwiZW1haWwiOiJxd2VydHkzQGdtYWlsLmNvbSIsImlhdCI6MTY3Mjk4NzQyMSwiZXhwIjoxNjcyOTg3NDUxfQ.hsMcehuY4T-d3_-HV09u5r4JwBaLrD-1cioI-xq37Bc", imgData: imgData) { returnResponse, returnError in
+            print("returnError------------",returnError)
+            print("returnResponse--------",returnResponse)
+        }
+        
+        // Get Screening Document Data
+        Apis().getScreeningDocumentData(token: "rteyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjNiN2MzMWQ2MDRmODhkZTVmNGZmM2QxIiwiZW1haWwiOiJxd2VydHkzQGdtYWlsLmNvbSIsImlhdCI6MTY3Mjk4NzQyMSwiZXhwIjoxNjcyOTg3NDUxfQ.hsMcehuY4T-d3_-HV09u5r4JwBaLrD-1cioI-xq37Bc", imgData: imgData) { returnResponse, returnError in
+            print("returnError------------",returnError)
+            print("returnResponse--------",returnResponse)
+        }
+        
+        // Get The Handwritten api Document Data
+        Apis().getHandwrittenDocumentData(token: "rteyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjNiN2MzMWQ2MDRmODhkZTVmNGZmM2QxIiwiZW1haWwiOiJxd2VydHkzQGdtYWlsLmNvbSIsImlhdCI6MTY3Mjk4NzQyMSwiZXhwIjoxNjcyOTg3NDUxfQ.hsMcehuY4T-d3_-HV09u5r4JwBaLrD-1cioI-xq37Bc", imgData: imgData) { returnResponse, returnError in
+            print("returnError------------",returnError)
+            print("returnResponse--------",returnResponse)
+        }
     }
 }
 

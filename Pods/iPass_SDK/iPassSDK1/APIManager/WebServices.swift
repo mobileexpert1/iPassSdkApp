@@ -51,7 +51,11 @@ public enum Endpoints : String {
     case documentPostData = "doc/postdata?token="
     case documentGetData = "doc/getdata?token="
     
+    case validateDocument = "document/validate"
+    case screeningDocument = "document/screening/data"
+    case handwrittenDocument = "handwritten/document"
 }
+
 //https://api.ipass-mena.com/api/v1/ipass/social/media/phone?token=eyJhbGciOiJIUzI1NiJ9.bXJ2ZXJtYTkxMzc4QGdtYWlsLmNvbWFqYXkga3VtYXI.H9agOLfRpnWywRo3alp75OeblSADsKsGDxVVUtheMyk
 public enum KYCEndpoints : String {
     case initKYCAccount = "kyc/initate/account?token="
